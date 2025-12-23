@@ -1,0 +1,26 @@
+{
+  "name": "family-portal-functions",
+  "version": "0.1.0",
+  "engines": {
+    "node": "20"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "clean": "rimraf lib",
+    "lint": "eslint --ext .ts src",
+    "deploy": "npm run build"
+  },
+  "dependencies": {
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^4.9.0",
+    "googleapis": "^131.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.16.0",
+    "eslint": "^8.57.0",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.5.4"
+  }
+}
